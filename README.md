@@ -45,7 +45,6 @@ to JSON exporter
         "title": "Title of the site",
         "avatar": "data:image/jpeg;base64,....",
         "ip": "0.0.0.0"
-    },
-    <...>
+    }
 ]
 ```
