@@ -1,12 +1,20 @@
 # HyperComments Export
 
-to JSON exporter
+Export all commentaries from HyperComments to JSON with simple CLI.
 
 ---
 
+## Why to use
+
+- HyperComments officially closed their free business plans.
+- You may prefer migrate to your own commentaries.
+- The official HyperComments API is non-intuitive and don't support
+  exporting entire site.
+- You may prefer JSON over XML.
+
 ## How to use
 
-1. Install Python 3.6<, pip, and it's dependencies:
+1. Install Python 3.6+, pip, and project dependencies:
     ```shell
     pip install -r requirements.txt
     ```
@@ -24,13 +32,7 @@ to JSON exporter
     python exporter.py --help
     ```
    
-## Why to use
 
-- HyperComments officially closed their free business plans.
-- You may prefer migrate to your own commentaries.
-- The official HyperComments API is non-intuitive and don't support
-  exporting entire site.
-- You may prefer JSON over XML.
 
 ## Output format
 
@@ -47,4 +49,14 @@ to JSON exporter
         "ip": "0.0.0.0"
     }
 ]
+```
+
+## Examples
+
+Go to `examples` folder to see folder with sources (`input`) and `output.json`.
+
+You can regenerate JSON-file by running `example.py`:
+
+```shell
+python example.py
 ```
